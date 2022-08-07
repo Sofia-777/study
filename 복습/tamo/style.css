@@ -1,0 +1,48 @@
+*{font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.intro_bg {
+  background-image: url(/tamo/intro.png.png);
+  width: 100%;
+  height: 718px;
+}
+
+.header {
+  display: flex;
+  width: 1280px;
+  height: 86px;
+  margin: auto;
+}
+.searchArea  {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 24px;
+
+/* .searchArea > form > input {
+  border: none;
+  width: 270px;
+  background: rgba(0,0,0,0,0);
+}
+ */
+
+
+
+}
+.nav {
+  display: flex;
+  width: calc(1280px - 300px);
+  justify-content: flex-end;
+  line-height: 86px;
+}
+
+nav > li{
+  margin-left: 84px;
+  float: left;
+}

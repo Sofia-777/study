@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+        /* 2n+1, odd : 홀수 */
+        li:nth-child(odd) {
+            background-color: rosybrown;
+        }
+        /* 2n, even : 짝수 */
+        li:nth-child(even) {
+            background-color: blanchedalmond;
+        }
+        /* 왼쪽 위가 1번 오른쪽 위가 2번 오른쪽 아래 3번 왼쪽 아래 4번
+        이때 둥글게는 first에 해당되는 작은 박스 기준(보면 알거임) */
+        li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+        /* 위와 동일하게 왼쪽 위가 1번 오른쪽 위가 2번 오른쪽 아래 3번 왼쪽 아래 4번. 이때 둥글게는 last에 해당되는 작은 박스 기준(보면 알거임) */
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+        li:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: all 0.7s;  /* 애니메이션 반응을 하는데 0.7초가 걸린다. */
+
+        }
+        /* li>a:first-child{
+            color: red;
+        } */
+        li:first-child>a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">First</a></li>
+        <li><a href="">Second</a></li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li> Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(1) {
+            color: red;
+        } 
+        /* 알고리즘 형식이라고 생각하기(?) 동위관계에서 (1)이 p인지 확인하고 없으면 자식으로, 거기에도 없으면 후손으로... */
+
+        p:nth-of-type(1) {
+            color: violet;
+        }
+        /* 1번이 p인지 확인 후 색칠됨.(이때 동위관계, 자손,후손 상관없이 그냥 봤을때 첫번째가 p이다 그럼 색칠되는거임) */
+
+        .brother p:nth-of-type(2) {
+            color: blue;
+        }
+        /* (클래스 명을 지정했으니 class안의 p중에서 2번째 순서인 형제2만 색칠됨) */
+
+    </style>
+</head>
+<body>
+    <h1>형제 테스트</h1>
+    <p>형제1</p>
+    <p>형제2</p>
+    <p>형제3</p>
+    <p>형제4</p>
+
+    <div class="brother">
+        <h1>형제테스트</h1>
+        <div>
+            <p>형제test</p>
+        </div>
+        <p>형제1</p>
+        <p>형제2</p>
+        <p>형제3</p>
+        <p>형제4</p>
+    </div>
+
+</body>
+</html>

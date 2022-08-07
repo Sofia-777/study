@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        div {
+            width: 80px;
+            height: 50px;
+            line-height: 50px; /* 행간을 뜻하며 height와 동일한 경우 중앙으로 온다. */
+            background-color: tomato;
+            border: 1px solid white;
+            text-align: center;
+            transition-property: width, background-color;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+        }
+        div:hover {
+            width: 200px;
+            background: #ff0000;
+            font-size: 30px;
+        }
+        </style>
+</head>
+<body>
+    <div><a href="">HOME</a></div>
+    <div><a href="">ABOUT</a></div>
+    <div><a href="">NEWS</a></div>
+    <div><a href="">STUDY</a></div>
+    <div><a href="">CONTACT</a></div>
+</body>
+</html>

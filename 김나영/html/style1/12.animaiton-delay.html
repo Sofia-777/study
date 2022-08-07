@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: tan;
+        position: relative;
+        animation: move 5s linear forwards;
+        /* animation-fill-mode: forwards; 이게 도착하면 멈추는 처음 상태로 돌아가지 않게 해주는 말인데, 걍 위의 animation에 forwards;를 넣어줘도 가능함*/
+        }
+
+        #box1{
+            animation-delay: 3s;
+        }
+
+        #box2{
+            animation-delay: 5s;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+</body>
+</html>

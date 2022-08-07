@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+
+
+    <!-- 웹폰트 사용하는 방법
+    1. 타이틀 뒤, 스타일 앞에 링크 레퍼런스 걸기
+    2. font-face 를 스타일 안에 작성
+    3. import utl를 스타일 안에 작성
+    3가지 중 하나 택한 뒤
+    그 후 Class 지정한 범위 내에 font-familyC(SS rules to specify families) 작성하기 -->
+
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        /* @font-face {
+        font-family: 'OTEnjoystoriesBA';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        } */
+
+        @font-face {
+        font-family: 'Yeongdo-Rg';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/Yeongdo-Rg.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+        body{font-family: 'Noto Sans KR', sans-serif;}
+
+        /* @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap'); */
+
+
+        /* 폰트 관련 속성은 '상속'된다. */
+        .arial {
+            /* font-family: Arial, Helvetica, sans-serif; */
+            /* font-family: 'Lobster', cursive; */   
+            font-family: 'OTEnjoystoriesBA'; 
+        }
+        .roman {
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: 'Yeongdo-Rg';
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            /* font-family: 'Gugi', cursive; */
+        }
+
+        .big{
+            font-size: 2em;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline
+        }
+
+        a, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* a:link a:visited 와 동일함. */
+        
+    </style>
+</head>
+
+
+<body>
+    <p class="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia explicabo, neque molestias quis dolorum facere minus officiis ipsum consequatur iste similique veniam voluptates quo, mollitia labore, pariatur quisquam. Tenetur, ad.</p>
+    <a href="#">바로가기</a>
+
+
+    <!-- <h1 class="arial">tvn 즐거운 이야기체</h1>
+
+    <p class="roman">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae culpa nobis placeat corporis, saepe nemo eveniet laborum! Saepe suscipit reprehenderit fugiat laudantium totam voluptates tempora, autem ullam aliquid aspernatur!
+        <span
+         style="border: 1px solid red;">
+            AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</span>
+    </p>
+    
+
+
+    <p>재산권의 행사는 공공복리에 적합하도록 하여야 한다. 모든 국민은 법률이 정하는 바에 의하여 납세의 의무를 진다. 모든 국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를 가진다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 모든 국민은 통신의 비밀을 침해받지 아니한다. 제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다. 모든 국민은 법 앞에 평등하다. 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.</p>
+
+    
+    <p>원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 대통령은 헌법과 법률이 정하는 바에 의하여 공무원을 임면한다. 군인 또는 군무원이 아닌 국민은 대한민국의 영역안에서는 중대한 군사상 기밀·초병·초소·유독음식물공급·포로·군용물에 관한 죄중 법률이 정한 경우와 비상계엄이 선포된 경우를 제외하고는 군사법원의 재판을 받지 아니한다. 대통령의 임기연장 또는 중임변경을 위한 헌법개정은 그 헌법개정 제안 당시의 대통령에 대하여는 효력이 없다. 대통령은 취임에 즈음하여 다음의 선서를 한다. 형사피의자 또는 형사피고인으로서 구금되었던 자가 법률이 정하는 불기소처분을 받거나 무죄판결을 받은 때에는 법률이 정하는 바에 의하여 국가에 정당한 보상을 청구할 수 있다.</p>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime amet, officiis nihil repellendus praesentium quia assumenda eos minus excepturi ullam explicabo dignissimos voluptates pariatur eius cumque, laboriosam laborum minima.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit maxime amet, officiis nihil repellendus praesentium quia assumenda eos minus excepturi ullam explicabo dignissimos voluptates pariatur eius cumque, laboriosam laborum minima.</p> -->
+
+</body>
+
+
+</html>
